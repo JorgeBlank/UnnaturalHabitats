@@ -1,0 +1,27 @@
+The following files as included with this text file:
+
+a_counter.pda_drunk.pda_grain_new.pda_rand.pda_tgl.pd
+
+are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License by Jamie Bullock. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+
+The following files:
+
+grain_envelopes.pdmulticurveadsr-help.pdmulticurveadsr.pdpolygrainvoice~.pdpolypoly-help.pdpolypoly-wrap.pdpolypoly.pd
+example1
+example1.wav
+monograinsynth.pd
+polygrainsynth.pd
+polygrainsynth-help.pd
+polygrainsynth-example.pd
+sssadpanel.pd
+loadometer.pd
+sssad.pd
+lb_list_argument.pdlb_singleton-help.pdlb_singleton.pd
+
+are licensed under a BSD-style license by Miller Puckette, Frank Barknecht, Phil Stone and others. The details for this can be found in LICENSE.txt as included with this file.
+
+
+Phil Stone 09-15-2008
+
+

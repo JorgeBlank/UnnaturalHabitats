@@ -1,0 +1,11 @@
+#N canvas 0 4 450 300 10;
+#X declare -path C:Program -path Files -path (x86)pd/extra/cream;
+#X declare -stdpath;
+#X obj 143 121 print;
+#X msg 140 28 bang;
+#X obj 129 78 path C:Program Files (x86)pd/extra/cream;
+#X obj 307 205 cream-help;
+#X obj 276 174 declare -stdpath;
+#X obj 93 163 polypoly;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;

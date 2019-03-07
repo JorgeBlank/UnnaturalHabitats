@@ -1,0 +1,86 @@
+#N canvas 0 0 1366 684 10;
+#X obj 103 101 cnv 15 220 300 empty empty empty 20 12 0 14 -86853 -66577
+0;
+#X obj 112 115 tgl 30 0 \$0-startmetro empty start 17 -5 0 10 -258113
+-13330 -4160 0 1;
+#X floatatom 141 129 5 0 0 2 rate - #0-changerate;
+#X obj 174 116 tgl 30 0 \$0-dust empty dust 17 -5 0 10 -258113 -13330
+-4160 0 1;
+#X floatatom 205 130 5 0 0 2 rate - #0-spread;
+#X floatatom 285 155 5 0 0 0 freak-range - #_freakrange;
+#X obj 145 158 tgl 15 0 $_on_speed empty on_speed 17 7 0 10 -258113
+-1 -258113 0 127;
+#X floatatom 180 157 5 0 0 0 - - #_speedyrate;
+#X obj 204 172 tgl 15 0 $_dustie empty dusty_freak_range 17 7 0 10
+-258113 -1 -258113 0 127;
+#X obj 105 264 tgl 15 0 $_seq_volumeson empty seq_volumeson 17 7 0
+10 -262144 -1 -1 0 1;
+#X obj 177 221 tgl 15 0 $_main_on_freq empty main_on_freq_+_amount
+17 7 0 10 -262144 -1 -1 0 1;
+#X floatatom 249 232 5 0 0 0 - - #_amts;
+#X floatatom 288 265 5 0 0 0 number_of_steps - #_number_steps;
+#X obj 203 233 tgl 15 0 $_dust+number_steps empty dust 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 105 194 tgl 15 0 $_seq_filt empty seq_filt 17 7 0 10 -262144
+-1 -1 0 1;
+#X floatatom 172 192 5 0 0 0 - - #_amtseqfilt;
+#X floatatom 255 189 5 0 0 0 - - #_stpnum;
+#X obj 207 193 tgl 15 0 $_filtdust empty dusty 17 7 0 10 -262144 -1
+-1 0 1;
+#X obj 105 214 tgl 15 0 $_sync-to empty sync-to-freq 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 232 248 tgl 15 0 $_autofrq empty send_autofreq 17 7 0 10 -262144
+-1 -1 0 1;
+#X text 133 172 AUTOFILTER;
+#X text 121 254 SYNC AMP;
+#X floatatom 276 284 5 0 0 0 Q-range - #_qrange;
+#X obj 105 286 tgl 15 0 $_qtip empty qtip 17 7 0 10 -258113 -1 -1 0
+127;
+#X floatatom 152 286 5 0 0 0 - - #_speedyq;
+#X obj 188 288 tgl 15 0 $_dustietip empty dust_tip 17 7 0 10 -4160
+-1 -4160 0 127;
+#X floatatom 294 324 5 0 0 0 mod-range - #_modamp;
+#X obj 106 317 tgl 15 0 $_randamp empty randamp 17 7 0 10 -258113 -1
+-1 0 127;
+#X floatatom 175 316 5 0 0 0 - - #_speedyrandmod;
+#X obj 216 316 tgl 15 0 $_dustmodamp empty dustmodamp 17 7 0 10 -4160
+-1 -4160 0 127;
+#X floatatom 289 358 5 0 0 0 freq_mod-range - #_modfreqrng;
+#X obj 106 345 tgl 15 0 $_randmod empty randmodfreq 17 7 0 10 -258113
+-1 -1 0 127;
+#X floatatom 190 344 5 0 0 0 - - #_speedyrandfreq;
+#X obj 229 344 tgl 15 0 $_dustampfreq empty dust_mod 17 7 0 10 -4160
+-1 -4160 0 127;
+#X obj 100 162 tgl 20 0 empty empty ALL 17 7 0 10 -258113 -1 -4160
+0 127;
+#X floatatom 105 382 5 0 0 1 ONE_RATE - -;
+#X obj 197 381 hsl 120 15 0 2000 0 0 empty empty empty -2 -8 0 10 -260097
+-1 -1 0 1;
+#X obj 133 237 loadbang;
+#X msg 107 235 1;
+#X msg 292 199 8;
+#X obj 186 250 s n;
+#X obj 134 62 r $_freakup;
+#X obj 217 449 ctlin 4;
+#X obj 211 420 autoscale 0 2000;
+#X connect 34 0 6 0;
+#X connect 34 0 8 0;
+#X connect 34 0 31 0;
+#X connect 34 0 27 0;
+#X connect 34 0 23 0;
+#X connect 34 0 25 0;
+#X connect 34 0 29 0;
+#X connect 34 0 33 0;
+#X connect 35 0 7 0;
+#X connect 35 0 24 0;
+#X connect 35 0 28 0;
+#X connect 35 0 32 0;
+#X connect 36 0 35 0;
+#X connect 37 0 38 0;
+#X connect 37 0 39 0;
+#X connect 38 0 40 0;
+#X connect 39 0 22 0;
+#X connect 41 0 34 0;
+#X connect 42 0 43 0;
+#X connect 43 0 36 0;
+#X coords 0 -1 1 1 223 300 1 100 100;

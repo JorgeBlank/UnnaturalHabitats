@@ -1,0 +1,38 @@
+#N canvas 222 244 450 300 10;
+#X obj 236 33 inlet;
+#X obj 278 33 inlet;
+#X obj 320 33 inlet;
+#X obj 350 67 -20;
+#X obj 243 151 s midi_mon;
+#X msg 81 99 1;
+#X obj 119 146 tgl 15 0 empty $_restore empty 17 7 0 10 -262144 -1
+-1 1 1;
+#X obj 125 183 spigot;
+#X obj 364 41 inlet;
+#X obj 362 179 tgl 15 0 empty $_bypass empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X obj 335 210 spigot;
+#X msg 395 207 0;
+#X obj 328 156 r $_manualoverside;
+#X obj 84 247 s seeknote;
+#X obj 271 245 s seekvelocity;
+#X obj 233 84 makenote 127 100;
+#X obj 89 272 outlet;
+#X obj 351 281 outlet;
+#X connect 0 0 15 0;
+#X connect 1 0 15 1;
+#X connect 2 0 3 0;
+#X connect 3 0 15 2;
+#X connect 5 0 6 0;
+#X connect 6 0 7 1;
+#X connect 8 0 5 0;
+#X connect 9 0 11 0;
+#X connect 9 0 10 1;
+#X connect 11 0 6 0;
+#X connect 12 0 10 0;
+#X connect 15 0 4 0;
+#X connect 15 0 13 0;
+#X connect 15 0 16 0;
+#X connect 15 1 7 0;
+#X connect 15 1 14 0;
+#X connect 15 1 17 0;
